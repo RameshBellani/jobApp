@@ -1,99 +1,111 @@
-.nav-container {
+.navbar {
   background-color: #272727;
-  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-
-.header-ul-container {
+.nav-container {
+  width: 90%;
+  margin: auto;
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  list-style: none;
-}
 
-.logo-container {
-  margin-left: 10px;
+  /* border: 1px solid white; */
 }
-
-.home-jobs-container {
-  list-style: none;
+.home-website-logo {
+  width: 110px;
+}
+.nav-items {
+  padding-left: 0;
+  list-style-type: none;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 20%;
-}
+  align-items: center;
+  gap: 25px;
 
-.nav-text {
-  color: #ffffff;
-  font-weight: bold;
-  font-family: 'Roboto';
-  font-size: 23px;
+  /* border: 1px solid white; */
 }
-
-.btn-logout {
-  color: #ffffff;
-  background-color: #4f46e5;
-  border: 0;
-  border-radius: 5px;
-  padding: 5px;
-  margin-right: 10px;
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 15px;
-  width: 100px;
-  height: 40px;
-  cursor: pointer;
-}
-
-.link {
+.nav-link-lg {
   text-decoration: none;
-}
-
-.home-icon {
   color: #ffffff;
-  font-size: 200%;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-link-sm {
+  text-decoration: none;
+  color: #ffffff;
 }
 
+.small-header-icons {
+  width: 26px;
+  height: 26px;
+  color: #ffffff;
+  margin-left: 15px;
+}
+
+.logout-button-lg {
+  background-color: #6366f1;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 22px;
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+}
+.logout-button-sm {
+  margin-left: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.logout-icon-sm {
+  width: 26px;
+  height: 26px;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .nav-items {
+    margin-left: auto;
+  }
+  .nav-link-lg {
+    display: none;
+  }
+  .logout-button-lg {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
-  .home-icon {
+  .navbar {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .home-website-logo {
+    width: 130px;
+  }
+  .nav-items {
+    gap: 30px;
+  }
+  .small-header-icons {
     display: none;
   }
-
-  .home-jobs-btn {
+  .logout-button-lg {
+    font-size: 16px;
+    padding: 6px 24px;
+  }
+  .logout-btn-list-item-small {
     display: none;
   }
 }
-
-@media screen and (max-width: 767px) {
-  .nav-text {
-    display: none;
+@media screen and (min-width: 1200px) {
+  .home-website-logo {
+    width: 150px;
   }
+}
 
-  .btn-logout {
-    display: none;
-  }
-
-  .logo {
-    width: 100%;
-    height: 100%;
-  }
-
-  .logo-container {
-    width: 20%;
-  }
-
-  .home-jobs-container {
-    width: 40%;
-  }
-
-  .home-jobs-btn {
-    color: #ffffff;
-    background-color: #4f46e5;
-    border: 0;
-    border-radius: 5px;
-    width: 120%;
-    height: 100%;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 5px;
-  }
+* {
+  /* border: 1px solid white; */
 }

@@ -1,36 +1,56 @@
-.not-found-container {
-  background-color: #000000;
-  height: 87.5vh;
-}
-
-.not-found-image-container {
+.not-found-page {
+  min-height: 100vh;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 70%;
+  background-color: #000000;
+}
+
+.not-found-container {
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+
+  width: 80%;
+  margin: auto;
 }
 
 .not-found-image {
-  width: 30%;
-  height: 80%;
+  width: 100%;
+  max-width: 350px;
 }
 
 .not-found-heading {
-  color: #ffffff;
+  margin: 0;
+  margin-top: 15px;
+  color: #f8fafc;
   font-family: 'Roboto';
-  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
 }
 
-.not-found-paragraph {
-  color: #ffffff;
+.not-found-description {
+  margin: 0;
+  color: #f1f5f9;
   font-family: 'Roboto';
-  text-align: center;
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 300;
 }
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .not-found-image {
-    width: 100%;
-    padding: 10px;
+    max-width: 410px;
+  }
+  .not-found-heading {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .not-found-heading {
+    font-size: 32px;
   }
 }
